@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  /* Enable smooth scrolling for the entire document */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Width of the scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-3;
+  }
+
+  /* Track of the scrollbar */
+  ::-webkit-scrollbar-track {
+    @apply bg-inherit bg-slate-950;
+  }
+
+  /* Handle of the scrollbar */
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#ff6347] rounded-2xl;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-200;
+  }
+}
