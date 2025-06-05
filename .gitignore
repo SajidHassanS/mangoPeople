@@ -34,3 +34,52 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+# ───────────────────────────────────────────────────────────────────────────────────
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# Testing
+/coverage
+
+# Next.js build outputs
+/.next/
+/out/
+
+# Production build (if you do a separate 'npm run build' into /build)
+/build
+
+# Miscellaneous
+.DS_Store
+*.pem
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env files (ignore any .env or .env.*.local)
+.env
+.env*.local
+
+# Vercel & deployments
+.vercel
+
+# TypeScript cache
+*.tsbuildinfo
+next-env.d.ts
+
+# ───────────────────────────────────────────────────────────────────────────────────
+# IDE / Editor folders
+.vscode/
+.idea/
+*.iml
+
+# ───────────────────────────────────────────────────────────────────────────────────
+# OS‐specific clutter
+Thumbs.db
+desktop.ini
