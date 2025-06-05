@@ -1,31 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Lexend:wght@100..900&display=swap');
+/* 1) Import each needed font exactly once. */
+/*    - Ephesis for any “script” words (e.g. “Delivery” or your tagline). */
+/*    - Lexend for all of your main/menu text. */
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* 2) Tailwind’s core directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 3) Put all of your global “base” overrides here */
 @layer base {
-  /* Enable smooth scrolling for the entire document */
+  /* 3a) Define CSS variables for “background” and “foreground”. 
+        These should match whatever you configured in tailwind.config.js. */
+  :root {
+    --background: #00010a; /* e.g. your dark navy/black background */
+    --foreground: #f9fafb; /* e.g. an off-white text color */
+  }
+
+  /* 3b) Enable smooth scrolling for anchor links, etc. */
   html {
     scroll-behavior: smooth;
   }
 
-  /* Width of the scrollbar */
+  /* 3c) Your custom scrollbar styling */
   ::-webkit-scrollbar {
     @apply w-3;
   }
-
-  /* Track of the scrollbar */
   ::-webkit-scrollbar-track {
     @apply bg-inherit bg-slate-950;
   }
-
-  /* Handle of the scrollbar */
   ::-webkit-scrollbar-thumb {
     @apply bg-[#ff6347] rounded-2xl;
   }
-
-  /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     @apply bg-gray-200;
   }
+
+  /* 3d) Make Lexend the “default” font for the entire document, 
+        and set the default background/text colors. */
+  body {
+    @apply font-lexend bg-background text-foreground min-h-screen;
+  }
+
+  /* 3e) (Optional) If you ever want ALL <h1>–<h6> to use Ephesis, uncomment this:
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-cursive;
+  }
+  */
 }

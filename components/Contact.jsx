@@ -1,49 +1,135 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaWhatsapp,
+} from "react-icons/fa";
 
-const Contact = () => {
+export default function Contact() {
   return (
-    <div>
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        transition={{ duration: 0.5 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="py-10 my-24 bg-gray-200 dark:bg-[#262626]"
-      >
-        <div className="container mx-auto px-6">
-          <h1 className="text-4xl text-center font-lexend font-bold mb-8">
-            Contact Us
-          </h1>
-          <div className="flex justify-center">
-            <div className="w-full rounded-lg shadow-lg p-6 mb-6 bg-gray-100 dark:bg-[#171717] text-center">
-              <h2 className="text-2xl font-semibold mb-4">Contact Info</h2>
-              <p className=" mb-2">
-                If you have any questions or feedback, feel free to reach out to
-                us!
+    <motion.footer
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      className="bg-[#111] text-white py-16"
+    >
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        {/* 1. Main heading */}
+        <h1 className="text-4xl md:text-5xl text-center font-lexend text-brand-red font-bold mb-12">
+          Contact Us
+        </h1>
+
+        {/* 2. Grid: Contact Info | QR Code & Social Icons */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          {/* --- Left column: Contact Info --- */}
+          <div className="space-y-8 bg-[#1f1f1f] rounded-lg shadow-xl p-8">
+            <h2 className="text-2xl font-semibold text-brand-yellow tracking-wide mb-4">
+              Contact Info
+            </h2>
+            <p className="text-gray-200">
+              If you have any questions or feedback, feel free to reach out to
+              us! We’re always happy to help.
+            </p>
+
+            {/* Address */}
+            <div className="space-y-2">
+              <h3 className="text-xl font-semibold text-brand-yellow">
+                Address
+              </h3>
+              <p className="text-gray-200">
+                Blue Building, Shop #01, Wadi Al Safa 05, Dubai
               </p>
-              <div className="mb-4">
-                <h3 className="font-semibold ">Address:</h3>
-                <p className="">
-                  Blue building,shop # 01,wadi al safa 05, Dubai
-                </p>
+            </div>
+
+            {/* Phone */}
+            <div className="space-y-2">
+              <h3 className="text-xl font-semibold text-brand-yellow">Phone</h3>
+              <p className="text-gray-200">04 578 6154</p>
+              <p className="text-gray-200">052 868 4152</p>
+            </div>
+
+            {/* Email */}
+            <div className="space-y-2">
+              <h3 className="text-xl font-semibold text-brand-yellow">Email</h3>
+              <p className="text-gray-200">hello@mangopeopledubai.com</p>
+            </div>
+          </div>
+
+          {/* --- Right column: QR Code + Social Icons --- */}
+          <div className="grid grid-cols-1 gap-8">
+            {/* QR CODE */}
+            <div className="flex flex-col items-center bg-[#1f1f1f] rounded-lg shadow-xl p-8">
+              <h2 className="text-2xl font-semibold text-brand-yellow mb-4">
+                Scan to Chat
+              </h2>
+              {/* Replace '/qr-code.png' with your actual QR code path */}
+              <div className="w-40 h-40 bg-white rounded-lg overflow-hidden mb-4">
+                <img
+                  src="/scanme.png"
+                  alt="Scan Me QR Code"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <div className="mb-4">
-                <h3 className="font-semibold ">Phone:</h3>
-                <p className="">04 578 6154</p>
-                <p className="">052 868 4152</p>
-              </div>
-              <div className="mb-4">
-                <h3 className="font-semibold ">Email:</h3>
-                <p className="">mangopeopledubai.com</p>
+              <p className="text-brand-red text-center  ">Scan Me</p>
+            </div>
+
+            {/* Social Media Icons */}
+            <div className="bg-[#1f1f1f] rounded-lg shadow-xl p-8 text-center">
+              <h2 className="text-2xl font-semibold text-brand-yellow mb-4">
+                Follow Us
+              </h2>
+              <div className="flex justify-center space-x-6">
+                <a
+                  href="https://wa.me/923001234567"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-green-500 hover:text-green-400 transition-colors"
+                  aria-label="WhatsApp"
+                >
+                  <FaWhatsapp size={28} />
+                </a>
+                <a
+                  href="https://www.facebook.com/yourpage"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-500 transition-colors"
+                  aria-label="Facebook"
+                >
+                  <FaFacebookF size={28} />
+                </a>
+                <a
+                  href="https://www.instagram.com/yourprofile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-pink-500 hover:text-pink-400 transition-colors"
+                  aria-label="Instagram"
+                >
+                  <FaInstagram size={28} />
+                </a>
+                <a
+                  href="https://twitter.com/yourprofile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sky-400 hover:text-sky-300 transition-colors"
+                  aria-label="Twitter"
+                >
+                  <FaTwitter size={28} />
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </motion.div>
-    </div>
-  );
-};
 
-export default Contact;
+        {/* 3. Footer Bottom Bar */}
+        <div className="mt-16 border-t border-gray-700 pt-6">
+          <p className="text-center text-gray-500 text-sm">
+            © {new Date().getFullYear()} Mango People. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </motion.footer>
+  );
+}

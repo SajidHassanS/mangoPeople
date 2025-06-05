@@ -1,8 +1,8 @@
-'use client';
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
-import { motion } from 'framer-motion';
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import { motion } from "framer-motion";
 
 function Hero() {
   return (
@@ -13,6 +13,7 @@ function Hero() {
       >
         <div className="container py-6">
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 place-items-center min-h-[600px] mx-5">
+            {/* LEFT TEXT */}
             <motion.div
               initial={{ x: -200, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
@@ -20,28 +21,38 @@ function Hero() {
               className="space-y-7 lg:col-span-2 text-dark order-2 sm:order-1 ml-3 text-center sm:text-center md:text-center lg:text-left xl:text-left"
             >
               <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-lexend font-bold">
-                Fresh, Delicious & Healthy Foods{' '}
-                <span className="text-orange-600 font-cursive text-7xl">
+                {/* Wrap this entire phrase in brand‐yellow */}
+                <span className="text-brand-yellow">
+                  Fresh, Delicious &amp; Healthy Foods
+                </span>
+                {/* Keep a space before “Delivery” */}
+                <span className="font-cursive text-brand-red">
+                  {" "}
                   Delivery
-                </span>{' '}
-                in <span className="text-orange-600">Dhaka</span>
+                </span>{" "}
+                in {/* “Dubai” in brand‐red as well */}
+                <span className="text-brand-red">Dubai</span>
               </h1>
-              <p>
+
+              <p className="font-lexend text-base text-foreground/80">
                 Delicious Foods Delivered to Your Door. <br /> Starts From ৳399
               </p>
+
               <Link
                 href="#"
-                className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-orange-600 rounded-xl group"
+                className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-brand-red rounded-xl group"
               >
-                <span className="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-orange-900 rounded group-hover:-mr-4 group-hover:-mt-4">
+                <span className="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-[#8d1b1b] rounded group-hover:-mr-4 group-hover:-mt-4">
                   <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
                 </span>
-                <span className="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full translate-y-full bg-orange-800 rounded-xl group-hover:mb-12 group-hover:translate-x-0"></span>
+                <span className="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full translate-y-full bg-[#8d1b1b] rounded-xl group-hover:mb-12 group-hover:translate-x-0"></span>
                 <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white">
                   Order Now
                 </span>
               </Link>
             </motion.div>
+
+            {/* RIGHT IMAGE */}
             <motion.div
               initial={{ x: 200, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
@@ -60,14 +71,14 @@ function Hero() {
         </div>
       </div>
 
-      {/* 2nd Part */}
+      {/* 2nd Part (unchanged) */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         className="overflow-hidden"
       >
-        <h1 className="text-3xl text-center font-lexend m-6 p-2 font-bold">
+        <h1 className="text-5xl md:text-6xl text-center font-lexend text-brand-red m-6 p-2 font-bold">
           Healthy and Tasty
         </h1>
         <div className="flex justify-evenly items-center flex-wrap">

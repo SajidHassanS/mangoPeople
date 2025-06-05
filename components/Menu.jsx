@@ -1,7 +1,7 @@
-'use client';
-import React from 'react';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
+"use client";
+import React from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Menu = () => {
   return (
@@ -15,7 +15,7 @@ const Menu = () => {
             transition={{ duration: 1.5 }}
             viewport={{ once: false }}
           >
-            <h1 className="text-4xl text-center font-lexendDeca font-bold mb-8 py-5">
+            <h1 className="text-5xl md:text-6xl text-center font-lexend text-brand-red m-6 p-2 font-bold">
               Our Menu
             </h1>
           </motion.div>
@@ -47,7 +47,7 @@ const Menu = () => {
               whileHover={{
                 scale: 1.05,
                 transition: { duration: 0.1 },
-                boxShadow: '0px 0px 15px 0px rgba(0, 0, 0, 0.2)',
+                boxShadow: "0px 0px 15px 0px rgba(0, 0, 0, 0.2)",
               }}
               className="rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]"
             >
@@ -78,7 +78,7 @@ const Menu = () => {
               whileHover={{
                 scale: 1.05,
                 transition: { duration: 0.1 },
-                boxShadow: '0px 0px 15px 0px rgba(0, 0, 0, 0.2)',
+                boxShadow: "0px 0px 15px 0px rgba(0, 0, 0, 0.2)",
               }}
               className="rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]"
             >
@@ -110,7 +110,7 @@ const Menu = () => {
               whileHover={{
                 scale: 1.05,
                 transition: { duration: 0.1 },
-                boxShadow: '0px 0px 15px 0px rgba(0, 0, 0, 0.2)',
+                boxShadow: "0px 0px 15px 0px rgba(0, 0, 0, 0.2)",
               }}
               className="rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]"
             >
@@ -141,7 +141,7 @@ const Menu = () => {
               whileHover={{
                 scale: 1.05,
                 transition: { duration: 0.1 },
-                boxShadow: '0px 0px 15px 0px rgba(0, 0, 0, 0.2)',
+                boxShadow: "0px 0px 15px 0px rgba(0, 0, 0, 0.2)",
               }}
               className="rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]"
             >
@@ -191,7 +191,7 @@ const Menu = () => {
               whileHover={{
                 scale: 1.05,
                 transition: { duration: 0.1 },
-                boxShadow: '0px 0px 15px 0px rgba(0, 0, 0, 0.2)',
+                boxShadow: "0px 0px 15px 0px rgba(0, 0, 0, 0.2)",
               }}
               className="rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]"
             >
@@ -222,7 +222,7 @@ const Menu = () => {
               whileHover={{
                 scale: 1.05,
                 transition: { duration: 0.1 },
-                boxShadow: '0px 0px 15px 0px rgba(0, 0, 0, 0.2)',
+                boxShadow: "0px 0px 15px 0px rgba(0, 0, 0, 0.2)",
               }}
               className="rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]"
             >
@@ -254,7 +254,7 @@ const Menu = () => {
               whileHover={{
                 scale: 1.05,
                 transition: { duration: 0.1 },
-                boxShadow: '0px 0px 15px 0px rgba(0, 0, 0, 0.2)',
+                boxShadow: "0px 0px 15px 0px rgba(0, 0, 0, 0.2)",
               }}
               className="rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]"
             >
@@ -285,7 +285,7 @@ const Menu = () => {
               whileHover={{
                 scale: 1.05,
                 transition: { duration: 0.1 },
-                boxShadow: '0px 0px 15px 0px rgba(0, 0, 0, 0.2)',
+                boxShadow: "0px 0px 15px 0px rgba(0, 0, 0, 0.2)",
               }}
               className="rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]"
             >
@@ -336,7 +336,7 @@ const Menu = () => {
               whileHover={{
                 scale: 1.05,
                 transition: { duration: 0.1 },
-                boxShadow: '0px 0px 15px 0px rgba(0, 0, 0, 0.2)',
+                boxShadow: "0px 0px 15px 0px rgba(0, 0, 0, 0.2)",
               }}
               className="rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]"
             >
@@ -367,7 +367,7 @@ const Menu = () => {
               whileHover={{
                 scale: 1.05,
                 transition: { duration: 0.1 },
-                boxShadow: '0px 0px 15px 0px rgba(0, 0, 0, 0.2)',
+                boxShadow: "0px 0px 15px 0px rgba(0, 0, 0, 0.2)",
               }}
               className="rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]"
             >
@@ -398,7 +398,7 @@ const Menu = () => {
               whileHover={{
                 scale: 1.05,
                 transition: { duration: 0.1 },
-                boxShadow: '0px 0px 15px 0px rgba(0, 0, 0, 0.2)',
+                boxShadow: "0px 0px 15px 0px rgba(0, 0, 0, 0.2)",
               }}
               className="rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]"
             >
@@ -430,7 +430,7 @@ const Menu = () => {
               whileHover={{
                 scale: 1.05,
                 transition: { duration: 0.1 },
-                boxShadow: '0px 0px 15px 0px rgba(0, 0, 0, 0.2)',
+                boxShadow: "0px 0px 15px 0px rgba(0, 0, 0, 0.2)",
               }}
               className="rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]"
             >

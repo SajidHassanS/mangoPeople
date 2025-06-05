@@ -13,7 +13,7 @@ function About() {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <h1 className="text-4xl text-center font-bold mb-6">
+          <h1 className="text-5xl md:text-6xl text-center font-lexend text-brand-red m-6 p-2 font-bold">
             About Mango People
           </h1>
           <p className="text-lg text-center max-w-2xl mx-auto mb-10">
@@ -47,7 +47,9 @@ function About() {
             viewport={{ once: true }}
             className="max-w-lg text-left"
           >
-            <h2 className="text-2xl font-semibold mb-4">Our Story</h2>
+            <h1 className="text-2xl font-semibold mb-4 text-brand-yellow">
+              Healthy and Tasty
+            </h1>
             <p className="mb-6">
               Mango People was born from a love for great food and a desire to
               create an inclusive space where everyone feels welcome.
@@ -55,7 +57,9 @@ function About() {
               both locals and visitors. Our menu offers a diverse range of
               culinary delights that cater to every taste.
             </p>
-            <h2 className="text-2xl font-semibold  mb-4">Our Team</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-brand-yellow">
+              Our Team
+            </h2>
             <p className="">
               Our talented chefs and friendly staff work tirelessly to ensure
               every guest has an amazing dining experience. We&apos;re committed
@@ -73,7 +77,7 @@ function About() {
           viewport={{ once: true }}
           className="py-10 rounded-lg shadow-lg bg-gray-100 dark:bg-[#171717]"
         >
-          <h2 className="text-3xl text-center font-semibold mb-8">
+          <h2 className="text-5xl md:text-6xl text-center font-lexend text-brand-red m-6 p-2 font-bold">
             Why Choose Us
           </h2>
 
@@ -84,7 +88,7 @@ function About() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{
                   duration: 0.9,
-                  ease: [0.65, 0, 0.35, 1]
+                  ease: [0.65, 0, 0.35, 1],
                 }}
                 viewport={{ once: false }}
               >
@@ -96,7 +100,9 @@ function About() {
                   className="w-32 h-32 mx-auto mb-4 hover:scale-110 translate duration-300 ease-in-out"
                 />
               </motion.div>
-              <h3 className="text-xl font-semibold mb-2">Fresh Ingredients</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-brand-yellow">
+                Fresh Ingredients
+              </h3>
               <p className="">
                 We use only the freshest and highest quality ingredients in all
                 our dishes, ensuring an unparalleled taste experience.
@@ -109,7 +115,7 @@ function About() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{
                   duration: 0.9,
-                  ease: [0.65, 0, 0.35, 1]
+                  ease: [0.65, 0, 0.35, 1],
                 }}
                 viewport={{ once: false }}
               >
@@ -121,7 +127,9 @@ function About() {
                   className="w-32 h-32 mx-auto mb-4 hover:scale-110 translate duration-300 ease-in-out"
                 />
               </motion.div>
-              <h3 className="text-xl font-semibold mb-2">Cozy Atmosphere</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-brand-yellow">
+                Cozy Atmosphere
+              </h3>
               <p className="">
                 Relax in our comfortable, welcoming environment that makes every
                 meal special.
@@ -134,7 +142,7 @@ function About() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{
                   duration: 0.9,
-                  ease: [0.65, 0, 0.35, 1]
+                  ease: [0.65, 0, 0.35, 1],
                 }}
                 viewport={{ once: false }}
               >
@@ -146,7 +154,9 @@ function About() {
                   className="w-32 h-32 mx-auto mb-4 hover:scale-110 translate duration-300 ease-in-out"
                 />
               </motion.div>
-              <h3 className="text-xl font-semibold mb-2">Excellent Service</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-brand-yellow">
+                Excellent Service
+              </h3>
               <p className="">
                 Our staff is dedicated to providing you with top-notch service
                 from the moment you walk through our doors.

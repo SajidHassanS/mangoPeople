@@ -37,7 +37,7 @@ function Header() {
           initial={{ y: -100 }}
           animate={{ y: 0 }}
           transition={{ duration: 1 }}
-          className="flex gap-4 mx-4"
+          className="flex gap-4 mx-4 text-brand-yellow"
         >
           <DarkmodeButton />
           <Navbar title="home" address="/" Icon={FaHome} />
