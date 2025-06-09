@@ -2,9 +2,7 @@
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function WhatsAppButton() {
-  // Replace with your own number (no “+” or dashes)
   const phoneNumber = "0528684152";
-  // Optional prefilled message (URL-encoded)
   const prefillText = encodeURIComponent(
     "Hello, I have a question about Mango People"
   );
@@ -18,12 +16,9 @@ export default function WhatsAppButton() {
       aria-label="Chat on WhatsApp"
       className="
         fixed
-        bottom-4
+        bottom-20      /* 5 rem (≈ 80 px) from the bottom edge */
         right-4
-        z-50
-        flex
-        items-center
-        justify-center
+        z-40           /* lower than z-50 so scroll arrow stays on top */
         w-14
         h-14
         bg-green-500
@@ -31,6 +26,9 @@ export default function WhatsAppButton() {
         text-white
         rounded-full
         shadow-lg
+        flex
+        items-center
+        justify-center
         transition-colors
       "
     >

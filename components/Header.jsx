@@ -13,7 +13,7 @@ import DarkmodeButton from "./DarkmodeButton";
 
 function Header() {
   return (
-    <div className="shadow-lg relative z-50">
+    <div className="shadow-lg relative sticky top-0 z-50">
       <div className="flex justify-between items-center p-3 max-w-7xl mx-auto">
         <motion.div
           initial={{ y: -100 }}
