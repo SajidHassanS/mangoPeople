@@ -3,7 +3,7 @@
 import "./globals.css";
 import Header from "@/components/Header";
 import Provider from "./Provider";
-import WhatsAppButton from "@/components/WhatsAppButton.jsx";
+import WhatsAppButton from "@/components/WhatsappButton.jsx";
 import ScrollToTopButton from "@/components/ScrollToTopButton.jsx";
 
 export const metadata = {
