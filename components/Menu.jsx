@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import menuData from "./data/MenuList";
 
-const WHATSAPP_NUMBER = "923130019205"; // ← replace with your business number, no “+” or dashes
+const WHATSAPP_NUMBER = "9710528684152"; // ← replace with your business number, no “+” or dashes
 
 const Menu = () => {
   const [searchTerm, setSearchTerm] = useState("");
