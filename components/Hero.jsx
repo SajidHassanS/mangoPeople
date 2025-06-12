@@ -35,7 +35,8 @@ function Hero() {
               </h1>
 
               <p className="font-lexend text-base text-foreground/80">
-                Delicious Foods Delivered to Your Door. <br /> Starts From ৳399
+                Delicious Foods Delivered to Your Door. <br /> Starts From{" "}
+                <span className=" text-brand-red">AED 3</span>
               </p>
 
               <Link
@@ -60,7 +61,7 @@ function Hero() {
               className="order-1 sm:order-1 flex justify-center md:justify-center w-full lg:justify-end xl:justify-end p-5"
             >
               <Image
-                src="/hero.png"
+                src="/images/bannerimage.png"
                 alt="hero image"
                 width={500}
                 height={200}
@@ -110,12 +111,13 @@ function Hero() {
               viewport={{ once: true }}
             >
               <p className="p-6 text-justify">
-                Our food is made with the freshest ingredients and is perfect
-                for those who want to eat healthy and tasty food. Lorem ipsum
-                dolor sit, amet consectetur adipisicing elit. Enim, sit iusto
-                dolore voluptate, quod porro, facere tempore ex corrupti
-                excepturi reprehenderit iure id doloribus ratione ad vel
-                eveniet. Sunt, neque.
+                We hand-select crisp bell peppers, ripe tomatoes, and seasonal
+                produce to bring you vibrant flavors and nutrients in every
+                bite. Our dishes showcase these fresh ingredients—lightly
+                roasted or sautéed—to retain their natural sweetness and crunch.
+                You’ll taste the difference of high-quality produce, prepared
+                simply yet thoughtfully, so each meal feels both wholesome and
+                indulgent.
               </p>
             </motion.div>
           </div>
@@ -131,12 +133,13 @@ function Hero() {
               viewport={{ once: true }}
             >
               <p className="p-6 text-justify">
-                Our food is made with the freshest ingredients and is perfect
-                for those who want to eat healthy and tasty food. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Officia, eligendi.
-                Deleniti nobis nulla cupiditate reprehenderit aliquid, fuga
-                aliquam ipsum asperiores voluptatum inventore debitis adipisci
-                natus non laboriosam ea perspiciatis ipsam?
+                Every recipe balances bold spices with gentle aromatics,
+                ensuring satisfying depth without overwhelming heaviness. Our
+                chefs layer flavors—think toasted cumin, fresh herbs, and a hint
+                of citrus—to enhance the natural character of each ingredient.
+                The result is a menu that excites the palate while remaining
+                light and nourishing, ideal for anyone seeking taste and
+                well-being in equal measure.
               </p>
             </motion.div>
             <motion.div
@@ -185,12 +188,14 @@ function Hero() {
               viewport={{ once: true }}
             >
               <p className="p-6 text-justify">
-                Our food is made with the freshest ingredients and is perfect
-                for those who want to eat healthy and tasty food. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Est, ad deleniti
-                eum praesentium temporibus sit unde porro quod commodi et
-                suscipit quos iste harum modi! Tempora iusto eaque at
-                accusantium.
+                We partner with local farmers and growers to source leafy greens
+                and herbs at peak freshness, minimizing food miles and
+                supporting sustainable practices. From garden-fresh spinach and
+                basil to aromatic cilantro and mint, our ingredients are chosen
+                for quality and environmental responsibility. Each dish
+                highlights these vibrant greens—whether in salads, garnishes, or
+                infusions—so you enjoy meals that nourish your body and respect
+                the planet.
               </p>
             </motion.div>
           </div>

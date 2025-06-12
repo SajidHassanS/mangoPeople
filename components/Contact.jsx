@@ -14,7 +14,7 @@ export default function Contact() {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="bg-[#111] text-white py-16"
+      className="bg-white dark:bg-[#111] text-gray-900 dark:text-white py-16"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* 1. Main heading */}
@@ -25,11 +25,11 @@ export default function Contact() {
         {/* 2. Grid: Contact Info | QR Code & Social Icons */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* --- Left column: Contact Info --- */}
-          <div className="space-y-8 bg-[#1f1f1f] rounded-lg shadow-xl p-8">
+          <div className="space-y-8 bg-gray-100 dark:bg-[#1f1f1f] rounded-lg shadow-xl p-8">
             <h2 className="text-2xl font-semibold text-brand-yellow tracking-wide mb-4">
               Contact Info
             </h2>
-            <p className="text-gray-200">
+            <p className="text-gray-700 dark:text-gray-200">
               If you have any questions or feedback, feel free to reach out to
               us! We’re always happy to help.
             </p>
@@ -39,7 +39,7 @@ export default function Contact() {
               <h3 className="text-xl font-semibold text-brand-yellow">
                 Address
               </h3>
-              <p className="text-gray-200">
+              <p className="text-gray-700 dark:text-gray-200">
                 Blue Building, Shop #01, Wadi Al Safa 05, Dubai
               </p>
             </div>
@@ -47,25 +47,27 @@ export default function Contact() {
             {/* Phone */}
             <div className="space-y-2">
               <h3 className="text-xl font-semibold text-brand-yellow">Phone</h3>
-              <p className="text-gray-200">04 578 6154</p>
-              <p className="text-gray-200">052 868 4152</p>
+              <p className="text-gray-700 dark:text-gray-200">04 578 6154</p>
+              <p className="text-gray-700 dark:text-gray-200">052 868 4152</p>
             </div>
 
             {/* Email */}
             <div className="space-y-2">
               <h3 className="text-xl font-semibold text-brand-yellow">Email</h3>
-              <p className="text-gray-200">hello@mangopeopledubai.com</p>
+              <p className="text-gray-700 dark:text-gray-200">
+                hello@mangopeopledubai.com
+              </p>
             </div>
           </div>
 
           {/* --- Right column: QR Code + Social Icons --- */}
           <div className="grid grid-cols-1 gap-8">
             {/* QR CODE */}
-            <div className="flex flex-col items-center bg-[#1f1f1f] rounded-lg shadow-xl p-8">
+            <div className="flex flex-col items-center bg-gray-100 dark:bg-[#1f1f1f] rounded-lg shadow-xl p-8">
               <h2 className="text-2xl font-semibold text-brand-yellow mb-4">
                 Scan to Chat
               </h2>
-              {/* Replace '/qr-code.png' with your actual QR code path */}
+              {/* Replace '/scanme.png' with your actual QR code path */}
               <div className="w-40 h-40 bg-white rounded-lg overflow-hidden mb-4">
                 <img
                   src="/scanme.png"
@@ -73,11 +75,11 @@ export default function Contact() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <p className="text-brand-red text-center  ">Scan Me</p>
+              <p className="text-brand-red text-center">Scan Me</p>
             </div>
 
             {/* Social Media Icons */}
-            <div className="bg-[#1f1f1f] rounded-lg shadow-xl p-8 text-center">
+            <div className="bg-gray-100 dark:bg-[#1f1f1f] rounded-lg shadow-xl p-8 text-center">
               <h2 className="text-2xl font-semibold text-brand-yellow mb-4">
                 Follow Us
               </h2>
@@ -124,8 +126,8 @@ export default function Contact() {
         </div>
 
         {/* 3. Footer Bottom Bar */}
-        <div className="mt-16 border-t border-gray-700 pt-6">
-          <p className="text-center text-gray-500 text-sm">
+        <div className="mt-16 border-t border-gray-300 dark:border-gray-700 pt-6">
+          <p className="text-center text-gray-500 dark:text-gray-400 text-sm">
             © {new Date().getFullYear()} Mango People. All rights reserved.
           </p>
         </div>
